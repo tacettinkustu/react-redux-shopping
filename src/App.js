@@ -1,18 +1,15 @@
 import React from "react";
 
-
 class App extends React.Component {
   render() {
     return (
-          <div className="grid-container">
-            <header>
-
-            </header>
-            <main>
-
-            </main>
-            <footer>All right is reserved.</footer>
-          </div>
+      <div className="grid-container">
+        <header>
+          <a href="/">React Shopping Cart</a>
+        </header>
+        <main>Product List</main>
+        <footer>All right is reserved.</footer>
+      </div>
     );
   }
 }
