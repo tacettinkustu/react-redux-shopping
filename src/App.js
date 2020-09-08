@@ -5,17 +5,19 @@ import Filter from "./components/Filter";
 import Cart from "./components/Cart";
 
 class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      products: data.products,
-      cartItems: localStorage.getItem("cartItems")
-        ? JSON.parse(localStorage.getItem("cartItems"))
-        : [],
-      size: "",
-      sort: "",
-    };
-  }
+  state = {
+    products: data.products,
+    cartItems: localStorage.getItem("cartItems")
+      ? JSON.parse(localStorage.getItem("cartItems"))
+      : [],
+    size: "",
+    sort: "",
+  };
+
+  createOrder = (order) => {
+    alert("Need to save order for " + order.name)
+  };
+
   removeFromCart = (product) => {
     const cartItems = this.state.cartItems.slice();
     this.setState({
@@ -105,6 +107,7 @@ class App extends React.Component {
               <Cart
                 removeFromCart={this.removeFromCart}
                 cartItems={this.state.cartItems}
+                createOrder={this.createOrder}
               ></Cart>
             </div>
           </div>
