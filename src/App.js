@@ -29,26 +29,6 @@ class App extends React.Component {
     );
   };
 
-  addToCart = (product) => {
-    const cartItems = this.state.cartItems.slice();
-    let alreadyInCart = false;
-    cartItems.forEach((item) => {
-      if (item._id === product._id) {
-        item.count++;
-        alreadyInCart = true;
-      }
-    });
-    if (!alreadyInCart) {
-      cartItems.push({ ...product, count: 1 });
-    }
-    this.setState({
-      cartItems,
-    });
-    localStorage.setItem("cartItems", JSON.stringify(cartItems));
-  };
-
-
-
   render() {
     return (
       <Provider store={store}>
@@ -60,9 +40,7 @@ class App extends React.Component {
             <div className="content">
               <div className="main">
                 <Filter></Filter>
-                <Products
-                  addToCart={this.addToCart}
-                ></Products>
+                <Products></Products>
               </div>
               <div className="sidebar">
                 <Cart
