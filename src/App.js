@@ -6,29 +6,6 @@ import { Provider } from "react-redux";
 import store from "./store";
 
 class App extends React.Component {
-  state = {
-    cartItems: localStorage.getItem("cartItems")
-      ? JSON.parse(localStorage.getItem("cartItems"))
-      : [],
-    size: "",
-    sort: "",
-  };
-
-  createOrder = (order) => {
-    alert("Need to save order for " + order.name);
-  };
-
-  removeFromCart = (product) => {
-    const cartItems = this.state.cartItems.slice();
-    this.setState({
-      cartItems: cartItems.filter((x) => x._id !== product._id),
-    });
-    localStorage.setItem(
-      "cartItems",
-      JSON.stringify(cartItems.filter((x) => x._id !== product._id))
-    );
-  };
-
   render() {
     return (
       <Provider store={store}>
@@ -43,11 +20,7 @@ class App extends React.Component {
                 <Products></Products>
               </div>
               <div className="sidebar">
-                <Cart
-                  removeFromCart={this.removeFromCart}
-                  cartItems={this.state.cartItems}
-                  createOrder={this.createOrder}
-                ></Cart>
+                <Cart></Cart>
               </div>
             </div>
           </main>
