@@ -1,58 +1,27 @@
 import React from "react";
-import Products from "./components/Products";
-import Filter from "./components/Filter";
-import Cart from "./components/Cart";
 import { Provider } from "react-redux";
 import store from "./store";
+import { BrowserRouter, Route, Link } from "react-router-dom";
+import HomeScreen from "./screens/HomeScreen";
+import AdminScreen from "./screens/AdminScreen";
 
 class App extends React.Component {
-  state = {
-    cartItems: localStorage.getItem("cartItems")
-      ? JSON.parse(localStorage.getItem("cartItems"))
-      : [],
-    size: "",
-    sort: "",
-  };
-
-  createOrder = (order) => {
-    alert("Need to save order for " + order.name);
-  };
-
-  removeFromCart = (product) => {
-    const cartItems = this.state.cartItems.slice();
-    this.setState({
-      cartItems: cartItems.filter((x) => x._id !== product._id),
-    });
-    localStorage.setItem(
-      "cartItems",
-      JSON.stringify(cartItems.filter((x) => x._id !== product._id))
-    );
-  };
-
   render() {
     return (
       <Provider store={store}>
-        <div className="grid-container">
-          <header>
-            <a href="/">React Shopping Cart</a>
-          </header>
-          <main>
-            <div className="content">
-              <div className="main">
-                <Filter></Filter>
-                <Products></Products>
-              </div>
-              <div className="sidebar">
-                <Cart
-                  removeFromCart={this.removeFromCart}
-                  cartItems={this.state.cartItems}
-                  createOrder={this.createOrder}
-                ></Cart>
-              </div>
-            </div>
-          </main>
-          <footer>All right is reserved.</footer>
-        </div>
+        <BrowserRouter>
+          <div className="grid-container">
+            <header>
+              <Link to="/">React Shopping Cart</Link>
+              <Link to="/admin">Admin</Link>
+            </header>
+            <main>
+              <Route path="/admin" component={AdminScreen} />
+              <Route path="/" component={HomeScreen} exact />
+            </main>
+            <footer>All right is reserved.</footer>
+          </div>
+        </BrowserRouter>
       </Provider>
     );
   }
