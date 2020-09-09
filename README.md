@@ -1,29 +1,3 @@
-# Build ECommerce Shopping Cart by React & Redux 2020 Edition
-
-Demo: https://reactredux-shoppingcart.herokuapp.com/
-
-[Get 90% Discount On This Course At Udemy](https://codingwithbasir.com/udemy-shopping-cart)
-
-## What you’ll learn
-
-- Design Shopping Cart Using HTML and CSS
-- Implement React Components For Product List, Filter, Cart
-- Managing Component State using Redux, React-Redux and - Redux-Thunk
-- Creating Animations Using React-Reveal and Add Routes using React-Routers
-- Build Backend using Node, Express, MongoDB and Mongoose
-- Publish Project on the Heroku and MongoDB Atlas
-
-## Are there any course requirements or prerequisites?
-
-- Basic HTML and CSS
-- Basic JavaScript
-
-## Who this course is for:
-
-- Javascript developers
-- Web Developers
-- Freelancers
-- Programming Students
 
 ## Table Of Content
 
