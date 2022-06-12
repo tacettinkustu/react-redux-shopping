@@ -7,7 +7,7 @@
       1. Fully-Functional Shopping Cart
       2. Instant Feedback
       3. Animated and Intuitive Design
-      4. List Products
+      4. List of Products
       5. Sort Products By Price High or Low
       6. Filter Products by Size
       7. Open Modal By Click on Product
