@@ -8,7 +8,7 @@
       2. Instant Feedback
       3. Animated and Intuitive Design
       4. List of Products
-      5. Sort Products By Price High or Low
+      5. Sort Products By Price
       6. Filter Products by Size
       7. Open Modal By Click on Product
       8. Add Product To Cart using Animation
