@@ -4,7 +4,7 @@
 1. Introduction
 
    1. Introduction
-      1. Fully-Functional Shopping Cart
+      1. Fully Functional Shopping Cart
       2. Instant Feedback
       3. Animated and Intuitive Design
       4. List of Products
