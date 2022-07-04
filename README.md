@@ -18,6 +18,7 @@
       12. Create Order with user friendly id
       13. Admin Section to see list of products
       14. Using postman to add or remove products and orders
+      
    2. Tools and Technologies
       1. JavaScript (arrow functions, array functions, spread Operators, ...)
       2. React (react-touter-dom, react-reveal, react-modal)
@@ -30,6 +31,7 @@
       9. Github (create repo, connect to local repo, pull request and merge)
       10. Postman ( send get, post, put and delete requests to apis)
       11. Deployment ( Heroku, MongoDB Atlas Cloud)
+      
    3. Create React App
       1. Open VS Code and open terminal
       2. cd Desktop
@@ -38,6 +40,7 @@
       5. Convert App.js Class Component
       6. Add header, main and footer
       7. Update index.css to add grid
+      
    4. Project Development Workflow
       1. Create Google Spreadsheet
       2. Add columns Feature, Description, State, and Duration
@@ -78,6 +81,7 @@
       13. product-price {flex, space-between, center}
       14. div {p.price} flex: 1; align: center; size: 2rem
       15. button.button.primary Add To Cart
+      
    2. Filter Component
       1. Create components/Filter.js
       2. Add it above Products component in App.js
@@ -94,6 +98,7 @@
       13. option "" ALL, XS, S, M, L, XL, XXL
       14. App.js
       15. Add Filter Component
+      
    3. Cart Component
       1. Set Active Task Management Spreadsheet
       2. Create branch cart-component
@@ -112,6 +117,7 @@
       15. Publish changes
       16. Pull request, merge, change to master
       17. Task Management Spreadsheet set it done
+      
    4. Checkout Form
       1. Set Active Task Management Spreadsheet
       2. Create branch checkout-form
@@ -130,6 +136,7 @@
       15. Commit and Publish changes
       16. Pull request, merge, change to master
       17. Task Management Spreadsheet set it done
+      
    5. Add Modal and Animation
       1. Set Active Task Management Spreadsheet
       2. Create branch animation-modal
@@ -208,6 +215,7 @@
       34. commit and publish
       35. send pull request and merge
       36. update spreadsheet
+      
    2. Add Redux To Filter
       1. Updte task and branch
       2. types.js
@@ -229,6 +237,7 @@
       18. remove Filter props
       19. check result
       20. update task and branch
+      
    3. Add Redux To Cart
       1. Updte task and branch
       2. types.js
@@ -282,6 +291,7 @@
       25. render()
       26. const { cartItems, order } = this.props;
       27. {order && (<Modal></Modal>}
+      
    2. Manage Orders
       1. Add new page
       2. Install react-router-dom
