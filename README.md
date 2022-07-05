@@ -66,7 +66,7 @@
 2. React
 
    1. Products Component
-      1. Create data.json {products:[{_id, title, ...}]
+      1. Create data.json {products:[{ _id, title, ... }]
       2. Update App.js to import data.json
       3. div.content {flex, wrap}
       4. div.main {flex: 3 60rem}
