@@ -290,7 +290,6 @@
       24. closeModal() this.props.clearOrder()
       25. render()
       26. const { cartItems, order } = this.props;
-      27. {order && (<Modal></Modal>}
       
    2. Manage Orders
       1. Add new page
